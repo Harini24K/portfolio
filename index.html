@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HARINI K - Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        
+        <h1>HARINI K</h1> <p1>Building my Future, Byte by Byte</p1>
+    </header>
+    <main>
+        <section class="about">
+            <div id="header">
+                <div class="container">
+                    <nav id="main-nav">
+                        <ul>
+                            <li><a herf="#">Home</a></li>
+                            <li><a herf="About"onclick=" scrollToAbout()">About</a></li>
+                            <li><a herf="Skill"onclick=" scrollToSkill()">Skills</a></li>
+                            <li><a herf="portfolio"onclick=" scrollToportfolio()">Portfolio</a></li>
+                            <li><a herf="contact"onclick=" scrollTocontact()">Contact</a></li>
+                            
+                          </ul>
+                    </nav>
+                </div>
+            </div>
+                
+                      <img src="yrimage.jpg">
+
+                      <br><br><br><br><br><br><br><br>
+
+                      
+            <h2>HI, I'm <span>Harini</span></h2>
+            <div class="description-section">
+                <p class="blinking-text">Web Developer</p>
+                <p>Basic Proficiency in C,C++,Python,Java,Android App Development,Html,Css<br>
+                   And Strong Leadership Skills With a Deligent Work Ethic,Focused<br>
+                   Concentration And Creativity</p>
+              </div>
+                
+        </section>
+        <script>
+           function scrollToAbout() {
+        const aboutSection = document.getElementById('About');
+        aboutSection.scrollIntoView({ behavior: "smooth" });
+      }
+          </script>
+          <script>
+            function scrollToSkill() {
+         const skillsSection = document.getElementById('Skill');
+         skillsSection.scrollIntoView({ behavior: "smooth" });
+       }
+           </script>
+           <script>
+            function scrollToportfolio() {
+         const portfoliosection = document.getElementById('portfolio');
+         portfoliosection.scrollIntoView({ behavior: "smooth" });
+       }
+           </script>
+            <script>
+              function scrollTocontact() {
+           const contactsection = document.getElementById('contact');
+           contactsection.scrollIntoView({ behavior: "smooth" });
+         }
+             </script>
+
+      
+
+            <br>
+            <br><br><br><br><br><br><br><br><br>
+            <section id="About">
+                <div class="container">
+                    <img src ="aboutimage.png">
+                  <div class="about-text-wrapper">
+                    <h3 class="sub-title">ABOUT ME</h3>
+                    <p class="about-text">A CSBS student at Panimalar Engineering College, I possess a strong foundation in Android and web development, along with proficiency in C, C++, Python, Java, HTML, and XML. I'm a passionate learner driven by a desire to innovate and collaborate on impactful projects in the digital landscape. Currently, I'm expanding my skillset with Linux and Ethical Hacking knowledge. This combination of technical expertise and a dedication to continuous learning positions me to make significant contributions in the ever-evolving field of technology. While coding is my primary passion, I find myself equally fascinated by Artificial Intelligence. This broader perspective fuels my creativity and helps me approach problems from unique angles, which I believe can be valuable in the ever-changing world of technology.</p>
+                  </div>
+                </div>
+              </section>
+              <br><br><br><br><br>
+        
+        <section id="Skill">
+        <div class="skills">
+  <h2>SKILLS</h2>
+  <div class="skills-container">
+    <div class="skill-item">
+      <img src="image1.jpg" >
+      <p>Web Development</p>
+    </div>
+    <div class="skill-item">
+      <img src="image2.jpg">
+      <p>Cyber Security</p>
+    </div>
+    <div class="skill-item">
+      <img src="image3.jpg">
+      <p>Data analyst</p>
+    </div>
+  </div>
+        </div>
+</section>
+
+<section id="portfolio">
+<div class="portfolio-container">
+  <div class="education-item">
+    <br>
+<h3>EDUCATION</h3>
+    <h4>Panimalar Engineering College</h4>
+    <p>Btech CSBS-2027</p>
+  </div>
+  <div class="cert-item">
+    <h3>CERTIFICATIONS</h3>
+    <div class="cert-image">
+    <img src="cert1.png" >
+    <h5> Learned Web development from Infosys Springboard</h5>
+    </div>
+    <div class="cert-image" >
+        
+    <img src="cert2.png" >
+    <h5>Learned Cyber Security from Nasscom</h5>
+    </div>
+   <div class="cert-image">
+    <img src="cert3.png" >
+    <h5> Learned Data analyst and visualization job stimulation from Accenture</h5>
+   </div>
+  </div>
+</div>
+</section>
+
+                  <br><br><br><br><br>
+                 
+                    <section id="contact">
+                      <div class="contact-info">
+                        <h2>CONTACT ME</h2> </div>
+    <form name="submit-to-google-sheet" >
+      <div class="form-group">
+        <label for="name"> Name</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email"> Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="comment">Message</label>
+        <textarea id="comment" name="comment" rows="5"></textarea>
+      </div>
+      <button type="submit">Send Message</button>
+    </form>
+    <div class="contact-info">
+      <p>Get in touch also at:</p>
+      <a href="mailto: harinik381@gmail.com">harinik381@gmail.com</a>
+      <br>
+      <a href="https://www.linkedin.com/in/harini-k-33bb38299/">LinkedIn </a>
+    </div>
+  </section><br><br><br>
+    
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxdO-TtpmpQ2MV-T4MhP9f9NbUTHCGS4Dh8V7dVz9Ec8eaZfjbl_z1ysYZgLmxFlAah/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+  
+
+  <section class="resume">
+    <p>
+      <div class="download-box">
+        <a href="yourresume.pdf" class="a1" download="Harini resume.pdf" type="application/pdf"> Download CV </a>
+        <div onclick="downloadCV()"></div>
+      </div>
+    </p>
+  </section>
+  
+  <script>
+  function downloadCV() {
+    // Create a blob object with your CV data (replace with your actual data)
+    const cvData = new Blob(["This is your CV content"], { type: "yourresumepdf" }); // Set type to PDF
+  
+    // Create a downloadable link with the blob object
+    const downloadLink = document.createElement("a");
+    downloadLink.href = URL.createObjectURL(cvData);
+    downloadLink.download = "yourresume.pdf";
+    downloadLink.click();
+  
+    // Revoke the object URL after download (optional)
+    URL.revokeObjectURL(downloadLink.href);
+  }
+  </script>
+
+    </main>
+    <footer>
+        <p>&copy; 2024 Harini K. All rights reserved.</p>
+        </footer>
+</body>
+</html>
